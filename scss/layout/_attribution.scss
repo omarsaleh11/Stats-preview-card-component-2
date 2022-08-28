@@ -1,0 +1,20 @@
+@use "../utils" as *;
+@use "../globals/variables" as *;
+.attribution {
+ position: absolute;
+ font-size: rem(25);
+ text-align: center;
+ top: 95%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ color: color(p);
+ a {
+  color: color(accent);
+ }
+ @include breakpoint-up("medium900") {
+  font-size: rem(25);
+  text-align: center;
+  top: 80%;
+  left: 50%;
+ }
+}

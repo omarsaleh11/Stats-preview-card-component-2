@@ -1,0 +1,29 @@
+@use "../utils" as *;
+$colors: (
+ mainBG: hsl(233, 47%, 7%),
+ cardBG: hsl(244, 38%, 16%),
+ accent: hsl(277, 64%, 61%),
+ h1: hsl(0, 0%, 100%),
+ p: hsla(0, 0%, 100%, 0.75),
+ h3: hsla(0, 0%, 100%, 0.6),
+);
+@function color($color-name) {
+ @return map-get($colors, $color-name);
+}
+
+$fontsizes: (
+ p: rem(15.1),
+ p-dsk: rem(15),
+ h1: rem(28.5),
+ h1-dsk: rem(36),
+ h2: rem(24),
+ h2-dsk: rem(25),
+ h3: rem(13),
+ h3-dsk: rem(13.5),
+);
+@function fs($fs) {
+ @return map-get($fontsizes, $fs);
+}
+
+$ff: "Inter", sans-serif;
+$ff-h3: "Lexend Deca", sans-serif;
